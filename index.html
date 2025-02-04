@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piggybank Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🐷 Piggybank Tracker</h1>
+
+        <div class="card">
+            <label for="coinType">💰 Select Coin:</label>
+            <select id="coinType">
+                <option value="1">1 PHP</option>
+                <option value="5">5 PHP</option>
+                <option value="10">10 PHP</option>
+                <option value="20">20 PHP</option>
+            </select>
+
+            <label for="quantity">🔢 Enter Quantity:</label>
+            <input type="number" id="quantity" min="1" placeholder="Enter quantity">
+
+            <button class="add-btn" onclick="addCoin()">➕ Add Coin</button>
+        </div>
+
+        <h2>Total Savings: <span id="total">0 PHP</span></h2>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Coin</th>
+                        <th>Quantity</th>
+                        <th>Total Value</th>
+                        <th>❌</th>
+                    </tr>
+                </thead>
+                <tbody id="coinTable"></tbody>
+            </table>
+        </div>
+
+        <button class="reset-btn" onclick="resetPiggybank()">🔄 Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

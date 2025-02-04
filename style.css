@@ -1,0 +1,140 @@
+/* Default Dark Mode */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #121212, #1a1a1a);
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 450px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Title */
+h1 {
+    font-size: 26px;
+    color: #ffcc00;
+    margin-bottom: 15px;
+}
+
+/* Card Section */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Labels */
+label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    text-align: left;
+    width: 100%;
+    color: #ffcc00;
+}
+
+/* Inputs & Select */
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ff9800;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #333;
+    color: white;
+    text-align: center;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+/* Add Button */
+.add-btn {
+    background: #4caf50;
+    color: white;
+    margin-top: 10px;
+}
+
+.add-btn:hover {
+    background: #45a049;
+}
+
+/* Reset Button */
+.reset-btn {
+    background: red;
+    color: white;
+    margin-top: 20px;
+}
+
+.reset-btn:hover {
+    background: darkred;
+}
+
+/* Total Savings */
+h2 {
+    font-size: 22px;
+    color: white;
+}
+
+/* Table Styling */
+.table-container {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+th, td {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 12px;
+    text-align: center;
+    color: white;
+}
+
+th {
+    background: #ff9800;
+    color: white;
+}
+
+/* Delete Button */
+.delete-btn {
+    background: red;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
